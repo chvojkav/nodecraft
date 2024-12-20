@@ -74,7 +74,7 @@ transformable = ["dep:transformable"]
 tracing = ["dep:tracing"]
 
 [dependencies]
-cheap-clone = { version = "0.1", path = "../cheap-clone", default-features = false, features = [
+cheap-clone = { git = "https://github.com/chvojkav/cheap-clone.git", branch = "buildable-ruserf", default-features = false, features = [
   "smol_str",
 ] }
 
@@ -83,7 +83,7 @@ agnostic = { version = "0.3", optional = true }
 byteorder = "1.5"
 futures = { version = "0.3", default-features = false, optional = true }
 thiserror = { version = "1", optional = true }
-transformable = { version = "0.1", path = "../transformable", default-features = false, optional = true }
+transformable = { git = "https://github.com/chvojkav/transformable.git", branch = "buildable-ruserf", default-features = false, optional = true }
 serde = { version = "1", default-features = false, optional = true, features = [
   "derive",
 ] }
